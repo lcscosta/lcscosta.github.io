@@ -32,10 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: '_site'
-          
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
