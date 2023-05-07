@@ -8,6 +8,7 @@ const site = lume({
   },
 });
 
+site.copy("CNAME");
 site.use(sass());
 
 export default site;
