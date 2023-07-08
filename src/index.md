@@ -3,10 +3,5 @@ layout: layout.njk
 title: Home | lcscosta
 ---
 
-# Lcscosta
+# console.log("Hello World!");
 
-## Table of Contents
-
-* [Blogs](blog/index.html)
-* [Projects](projects/index.html)
-* [About Me](about.html)
