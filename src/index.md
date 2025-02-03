@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: /layouts/layout.vto
 title: Home | lcscosta
 ---
 

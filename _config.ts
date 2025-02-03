@@ -1,12 +1,15 @@
 import lume from "lume/mod.ts";
-import sass from "lume/plugins/sass.ts";
 
-const site = lume({
-    src: 'src/',
-});
+const site = lume(
+    {
+        src: 'src/',
+        server: {
+            port: 5000,
+        },
+        includes: "_includes/",
+    }
+);
 
-site.use(sass());
-site.copy("CNAME");
-site.copy("assets");
+site.copy("_includes");
 
 export default site;
